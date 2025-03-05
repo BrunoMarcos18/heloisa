@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Amo Heloisa</title>
+    <style>
+        /* Estilo para o body */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* Vídeo de fundo */
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Faz o vídeo cobrir toda a tela */
+            z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+        }
+
+        /* Estilo do container do coração */
+        .heart-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Estilo do coração */
+        .heart {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background: url('coração.webp') no-repeat center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Estilo do texto dentro do coração */
+        .text {
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- Vídeo de fundo -->
+    <video autoplay muted loop class="video-background">
+        <source src="video.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+    </video>
+
+    <!-- Conteúdo sobre o vídeo -->
+    <div class="heart-container">
+        <div class="heart">
+            <div class="text">Te amo Heloisa! Obrigado por me fazer quem eu sou hoje</div>
+        </div>
+    </div>
+</body>
+</html>
+
